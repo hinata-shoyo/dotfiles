@@ -186,11 +186,19 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
 bar {
-	#status_command i3status| ~/.config/i3/i3spotifystatus/pystatus.py
-       status_command i3status 
+  status_command i3status -c ~/.config/i3/i3status.conf
+  tray_output none
+  height 18
+  separator_symbol "//"
+  colors {
+    statusline	#000000
+    background	#282828
+    separator	#282828
+    focused_workspace  #515151 #515151 #BBBBBB
+    active_workspace   #0f1316 #0f1316 #BBBBBB
+    inactive_workspace #0f1316 #0f1316 #BBBBBB
+   }
 }
 # Screenshots
 exec --no-startup-id flameshot
@@ -200,8 +208,8 @@ bindsym Print exec "flameshot gui"
 for_window [class="^.*"] border pixel 2
 
 # Set inner/outer gaps
-gaps inner 7
-gaps outer 2
+gaps inner 6
+gaps outer 1
 
 # Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
 # gaps inner|outer current|all set|plus|minus <px>
