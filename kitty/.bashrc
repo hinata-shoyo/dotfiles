@@ -12,7 +12,7 @@ alias grep='grep --color=auto'
 alias t="tmux"
 alias tks="tmux kill-session -t"
 # PS1='[\u@\h \W]\$ '
-PS1='\[\e[1;32m\]\u\[\e[1;32m\]@\h\[\e[1;32m\] \w\[\e[0m\] \$ '
+PS1='\[\e[1;32m\][\u@\h \W]\[\e[0m\]\$ '
 function hg(){
   history | grep "$@"
 }
