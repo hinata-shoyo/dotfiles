@@ -1,28 +1,27 @@
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.clipboard = "unnamedplus"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.expandtab = true
-vim.opt.shiftwidth = 2
+vim.opt.shiftwidth = 3
 vim.opt.expandtab = true
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
+vim.opt.shiftwidth = 3
+vim.opt.tabstop = 3
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.title = true
 vim.opt.hlsearch = true
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 11
 vim.opt.breakindent = true
 vim.opt.ignorecase = true
 vim.opt.smarttab = true
 vim.opt.wrap = false
-vim.opt.backspace = {"start", "eol", "indent"}
-vim.opt.wildignore:append({"*/node_modules/*"})
+vim.opt.backspace = { "start", "eol", "indent" }
+vim.opt.wildignore:append({ "*/node_modules/*" })
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
 
-vim.opt.formatoptions:append({"r"})
-
+vim.opt.formatoptions:append({ "r" })
 
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
@@ -66,6 +65,11 @@ keymap.set("n", "<C-S-h>", "<C-w><")
 keymap.set("n", "<C-S-l>", "<C-w>>")
 keymap.set("n", "<C-S-k>", "<C-w>+")
 keymap.set("n", "<C-S-j>", "<C-w>-")
+
+keymap.set("n", "<C-u>", "<C-u>zz", opts)
+keymap.set("n", "<C-d>", "<C-d>zz", opts)
+keymap.set("n", "n", "nzzzv", opts)
+keymap.set("n", "N", "Nkzzzv", opts)
 
 -- Diagnostics
 -- keymap.set("n", "<C-j>", function()
