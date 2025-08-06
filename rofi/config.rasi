@@ -1,18 +1,13 @@
-configuration{
-    modi: "run,window,combi";
-    icon-theme: "Oranchelo";
-    show-icons: true;
-    terminal: "kitty";
-    drun-display-format: "{icon} {name}";
-    location: 0;
-    disable-history: false;
-    hide-scrollbar: true;
-    display-combi: " 🖥️  All ";
-    display-run: " 🏃  Run ";
-    display-window: " 🪟  Window";
-    sidebar-mode: true;
+configuration {
+    display-ssh:    "";
+    display-run:    "";
+    display-drun:   "";
+    display-window: "";
+    display-combi:  "";
+    show-icons:     true;
 }
 
+@theme "~/.config/rofi/gruvbox.rasi"
 
 //@theme "/usr/share/rofi/themes/gruvbox-dark.rasi"
 
@@ -22,4 +17,4 @@ configuration{
 
 //@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
 
-@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+// @theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
