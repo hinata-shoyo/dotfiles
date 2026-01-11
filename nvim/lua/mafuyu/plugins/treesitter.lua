@@ -42,6 +42,9 @@ return {
         "query",
         "vimdoc",
         "c",
+        "cpp",
+        "python",
+        "htmldjango",
       },
       incremental_selection = {
         enable = true,
