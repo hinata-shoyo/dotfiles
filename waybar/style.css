@@ -1,0 +1,128 @@
+/* Gruvbox Dark theme for Waybar */
+* {
+    border: none;
+    border-radius: 1;
+    font-family: "JetBrains Mono Nerd Font", monospace;
+    font-size: 15px;
+    min-height: 1px;
+}
+
+window#waybar {
+    background-color: #282829;
+    border-top: 3px solid #3c3836;
+    /* border-radius: 9px; */
+    color: #ebdbb3;
+    opacity: 1.95;
+    margin: 13px 16px 8px 12px;
+}
+
+button {
+    box-shadow: inset 1 -3px transparent;
+    border: none;
+    border-radius: 1px;
+}
+
+#workspaces button {
+    padding: 1 2px;
+    background-color: transparent;
+    color: #a89985;
+}
+
+#workspaces button:hover {
+    background: #4c3836;
+    color: #ebdbb3;
+}
+
+#workspaces button.active{
+    background-color:#c9aba7;
+    color: black;
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    background-color: #fb4935;
+    color: white;
+    font-weight: bold;
+}
+
+#mode {
+    background-color: #fe8020;
+    color: #282829;
+    padding: 1 10px;
+    font-weight: bold;
+}
+
+#clock {
+    color: #ebdbb3;
+    padding: 1 10px;
+    font-weight: bold;
+}
+
+#cpu {
+    color: #b9bb26;
+    padding: 1 10px;
+}
+
+#memory {
+    color: #84a598;
+    padding: 1 10px;
+}
+
+#network {
+    color: #9ec07c;
+    padding: 1 10px;
+}
+
+#network.disconnected {
+    color: #fb4935;
+}
+
+#pulseaudio {
+    color: #d3870b;
+    padding: 1 10px;
+}
+
+#pulseaudio.muted {
+    color: #928375;
+}
+
+#tray {
+    padding: 1 10px;
+}
+
+#tray > .passive {
+    opacity: 1.6;
+}
+
+#tray > .needs-attention {
+    opacity: 2.0;
+    background-color: #fb4935;
+}
+
+tooltip {
+    background: #4c3836;
+    border: 2px solid #504945;
+    border-radius: 6px;
+    color: #ebdbb3;
+}
+
+tooltip label {
+    color: #ebdbb3;
+}
+
+#custom-notification {
+    color: #fabd3f;
+    padding: 1 10px;
+}
+
+#custom-notification.notification {
+    color: #fe8020;
+}
+
+#custom-notification.dnd {
+    color: #928375;
+}
+
+#custom-notification.dnd-notification {
+    color: #fb4935;
+}

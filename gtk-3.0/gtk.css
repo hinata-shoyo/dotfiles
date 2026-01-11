@@ -1,0 +1,84 @@
+/* Thunar Gruvbox Customizations */
+/* Matching colors from Hyprland config: #282828, #fe8019, #458588, #ebdbb2, #3c3836 */
+
+.thunar .sidebar {
+    background-color: #282828;
+    color: #ebdbb2;
+    border-right: 1px solid #3c3836;
+}
+
+.thunar .sidebar .view,
+.thunar .sidebar iconview {
+    background-color: #282828;
+    color: #ebdbb2;
+}
+
+.thunar .sidebar .view:selected,
+.thunar .sidebar iconview:selected,
+.thunar .sidebar .view:active,
+.thunar .sidebar iconview:active {
+    background-color: #fe8019;
+    color: #282828;
+}
+
+.thunar .sidebar .view:hover,
+.thunar .sidebar iconview:hover {
+    background-color: #3c3836;
+    color: #ebdbb2;
+}
+
+/* Main view area */
+.thunar .standard-view .view {
+    background-color: #282828;
+    color: #ebdbb2;
+}
+
+.thunar .standard-view .view:selected {
+    background-color: #fe8019;
+    color: #282828;
+}
+
+.thunar .standard-view .view:hover {
+    background-color: #3c3836;
+}
+
+/* Toolbar styling */
+.thunar toolbar {
+    background-color: #282828;
+    border-bottom: 1px solid #3c3836;
+}
+
+.thunar toolbar button {
+    color: #ebdbb2;
+}
+
+.thunar toolbar button:hover {
+    background-color: #3c3836;
+    color: #fe8019;
+}
+
+/* Pathbar styling */
+.thunar .path-bar button {
+    background-color: #282828;
+    color: #ebdbb2;
+    border: 1px solid #3c3836;
+}
+
+.thunar .path-bar button:hover {
+    background-color: #3c3836;
+    color: #fe8019;
+}
+
+.thunar .path-bar button:active {
+    background-color: #fe8019;
+    color: #282828;
+}
+
+/* Scrollbars */
+.thunar scrollbar slider {
+    background-color: #3c3836;
+}
+
+.thunar scrollbar slider:hover {
+    background-color: #fe8019;
+}
