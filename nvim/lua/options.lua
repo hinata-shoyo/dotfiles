@@ -2,10 +2,8 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.expandtab = true
-vim.opt.shiftwidth = 3
-vim.opt.expandtab = true
-vim.opt.shiftwidth = 3
-vim.opt.tabstop = 3
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.title = true
@@ -20,6 +18,18 @@ vim.opt.wildignore:append({ "*/node_modules/*" })
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
+
+vim.api.nvim_create_user_command("Cpp", function()
+  vim.cmd("0r ~/.config/nvim/templates/cpp.cpp")
+end, {})
+
+vim.api.nvim_create_user_command("Cppbt", function()
+  vim.cmd("0r ~/.config/nvim/templates/cppbt.cpp")
+end, {})
+
+vim.api.nvim_create_user_command("Cppll", function()
+  vim.cmd("0r ~/.config/nvim/templates/cppll.cpp")
+end, {})
 
 vim.opt.formatoptions:append({ "r" })
 
